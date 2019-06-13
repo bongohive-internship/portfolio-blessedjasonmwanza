@@ -6,15 +6,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://bongohive.co.zm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to BongoHive, hoping you can join our dev team.
-        </a>
+          <span className="App-logo">
+            <img src={logo} alt="logo" />
+          </span>
+          <span className="App-menu">
+            <a href="#">Home</a>
+            <a href="#" >Hobbies</a>
+            <a href="#">Fears</a>
+            <a href="#">Contact</a>
+          </span>
+
       </header>
     </div>
   );
