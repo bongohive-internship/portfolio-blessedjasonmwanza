@@ -1,21 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import  './css/Contact.css';
+import './css/FavoriteLangues.css';
+import TopNav from './components/TopNav';
+import Contact from './components/contact';
+import FavoriteLangues from './components/favorite-languages';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          href="https://bongohive.co.zm"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Welcome to BongoHive, hoping you can join our dev team.
-        </a>
-      </header>
+      <span className="margin" />
+      < TopNav />
+      < FavoriteLangues />
+      < Contact />
     </div>
   );
 }
