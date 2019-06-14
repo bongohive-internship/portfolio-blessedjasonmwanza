@@ -13,8 +13,7 @@
   background-color: #282c34;
   min-height: 45px;
   display: inline-flex;
-  left: 0;
-  right: 0;
+  left: 0; right: 0;
   top: 0;
   flex-direction: row-wrap;
   align-items: center;
@@ -24,6 +23,7 @@
   color: white;
   position: fixed;
   z-index: 2;
+  margin: 0 auto;
 }
 
 .App-link {
@@ -40,7 +40,11 @@
   color: #fff;
 }
 
-
+@media screen and (max-width: 1024px){
+  .App-header {
+    padding-left: 30px;
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
