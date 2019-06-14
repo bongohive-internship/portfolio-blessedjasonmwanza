@@ -6,6 +6,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(-15deg, rgba(0, 255, 255, 0.438), rgba(0, 102, 153, 0.534));
+  overflow-x: hidden;
+  width: 100%;
 }
 
 code {
@@ -45,6 +47,7 @@ a{
   color: rgb(255, 255, 255);
   font-weight: 600;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, .44);
+  margin-bottom: 5px;
 }
 .profile-image, .profile-image img{
   overflow: hidden;
@@ -80,16 +83,43 @@ a{
 
 .Welcome-Section .cards .card h3{
   border-bottom: 1px solid rgba(202, 202, 202, 0.548);
-  padding-bottom: 10px;
+  padding: 10px 0px;
+  font-size: initial !important;
+  margin: 0px;
 }
 .Welcome-Section .cards .card li{
-  list-style-type: none;
+  list-style-type: disc;
   min-height: 25px;
   color: rgb(68, 68, 68);
   line-height: 25px;
-  border-bottom: 1px solid rgba(202, 202, 202, 0.383);
+  border-top: 1px solid rgba(202, 202, 202, 0.383);
   width: 100%;
   text-align: left;
   margin: 5px 0px;
   padding: 5px 0px;
+  font-size: 14.8px;
+}
+.Welcome-Section ul{
+  margin: 0px;
+  width: auto;
+}
+.Welcome-Section em{
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width:1024px){
+  .Welcome-Section{
+    width: 90%;
+    margin-left: 0px;
+  }
+  .Welcome-Section .cards{
+    flex-flow: column;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Welcome-Section .cards .card{
+    width: 90vw;
+    margin-top:20px;
+  }
 }
